@@ -1,0 +1,29 @@
+
+{% block head %}
+<link rel='stylesheet' type='text/css' media='screen' href='/static/login.css'>
+{% endblock %}
+{% block content %}
+
+<div id="nav-container" style="top: 0px;">
+    <div class="name"><a href="/hello" target="_self">TuristGuiden</a></div>
+    <div class="menu-list-right">
+      <ul>
+        <li><a href="/hello" target="_self" class=" current">hjem</a></li>
+        <li><a href="https://itemize.no/om-itemize" target="_self">om oss</a></li>
+        <li><a href="/register" target="_self">register</a></li>
+        <li><a href="/login" target="_self">login</a></li>
+      </ul>
+    </div>
+</div>
+<p>{{message}}</p>
+<h3>Things you can do as an admin:</h3>
+<ul class="adminThing">
+  <li><a href="/users">Overview of the users and informations.</a></li>
+  <br>
+  <li>Gjøre noe med money cookie.</li>
+  <br>
+  <li>Endre noe.</li>
+</ul>
+
+
+{% endblock %}

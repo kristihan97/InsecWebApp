@@ -1,0 +1,76 @@
+{% block head %}
+<link rel='stylesheet' type='text/css' media='screen' href='/static/login.css'>
+{% endblock %}
+
+{% block content %}
+
+<div id="nav-container" style="top: 0px;">
+  <div class="name"><a href="/hello" target="_self">TuristGuiden</a></div>
+  <div class="menu-list-right">
+    <ul>
+      <li><a href="/hello" target="_self" class=" current">hjem</a></li>
+      <li><a href="https://itemize.no/om-itemize" target="_self">om oss</a></li>
+      <li><a href="/register" target="_self">register</a></li>
+      <li><a href="/login" target="_self">login</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="kontaktskjema">
+  <form action="/register" method = "POST">
+    <div class="container">
+      <h1>Register</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="un" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="pw2" required>
+      {% if message %}
+      <p><strong>{{message}}</strong></p>
+      {% endif %}
+      <hr>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <input type="hidden" name="admin" value=0>
+
+
+      <input type = 'submit' value = 'Register'/>
+    </div>
+    
+    
+    <div class="container signin">
+      <p>Already have an account? <a href="/login">Sign in</a>.</p>
+    </div>
+  </form>
+</div>
+
+<div class="footer" id="footer-container">
+  <div class="footerContent">
+    <div class="section" id="venstreSide">
+      <h4>Åpningstider</h4>
+      <div>
+        <p>Torsdag kl 08:00-18:00</p>
+        <p>Fredag kl 08:00-18:00</p>
+        <p>Lørdag kl 08:00-18:00</p>
+        <p>Søndag kl 08:00-18:00</p>
+      </div>
+    </div>
+    <div class="section" id="hoyreSide">
+      <h4>Itemize</h4>
+      <div>
+        <p>O.S. Bragstads plass 2A</p>
+        <p>7034 TRONDHEIM</p>
+        <p>hack@itemize.no</p>
+        <p>+47 95 43 67 51</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

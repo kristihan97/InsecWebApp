@@ -1,0 +1,80 @@
+
+
+{% block head %}
+<link rel='stylesheet' type='text/css' media='screen' href='/static/login.css'>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div id="nav-container" style="top: 0px;">
+    <div class="name"><a href="/hello" target="_self">TuristGuiden</a></div>
+    <div class="menu-list-right">
+      <ul>
+        <li><a href="/hello" target="_self" class=" current">hjem</a></li>
+        <li><a href="https://itemize.no/om-itemize" target="_self">om oss</a></li>
+        <li><a href="/register" target="_self">register</a></li>
+        <li><a href="/login" target="_self">login</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+<!--  <form action = "/login" method = "POST">
+
+    <div class="test">
+        <h3>Enter userID</h3>
+        <label for="username">Username:</label><br>
+        <input type = 'text' name = 'un' id="username"/><br><br>
+        <label for="password">Password:</label><br>
+        <input type = 'password' name = 'pw' id="password"/>
+        <input type = 'submit' value = 'Login'/>  
+    </div>
+</form> -->
+<div id="kontakt">
+    <h1>LOGIN</h1>
+    <p>Du må skrive inn både brukernavnet og passordet ditt for å logge inn. Har du adminrettigheter kan du gjøre kanskje gjøre kule ting på etter å ha logget inn!</p>
+</div>
+<div id="kontaktskjema"> 
+    <form action = "/login" method = "POST">
+
+        <div class="test">
+            <h2>Enter userID</h2>
+            <label for="username">Username:</label><br>
+            <input type = 'text' name = 'un' id="username" required /><br><br>
+            <label for="password">Password:</label><br>
+            <input type = 'password' name = 'pw' id="password" required />
+            <input type = 'submit' value = 'Login'/>  
+        </div>
+    </form>
+    {% if message %}
+        <p>{{message}}</p>
+    {% endif %}
+    
+</div>
+<div class="footer" id="footer-container">
+    <div class="footerContent">
+      <div class="section" id="venstreSide">
+        <h4>Åpningstider</h4>
+        <div>
+          <p>Torsdag kl 08:00-18:00</p>
+          <p>Fredag kl 08:00-18:00</p>
+          <p>Lørdag kl 08:00-18:00</p>
+          <p>Søndag kl 08:00-18:00</p>
+        </div>
+      </div>
+      <div class="section" id="hoyreSide">
+        <h4>Itemize</h4>
+        <div>
+          <p>O.S. Bragstads plass 2A</p>
+          <p>7034 TRONDHEIM</p>
+          <p>hack@itemize.no</p>
+          <p>+47 95 43 67 51</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+{% endblock %}

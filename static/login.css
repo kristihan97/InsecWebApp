@@ -1,0 +1,269 @@
+body {
+  background-color: #469e6d;
+}
+
+input[type=text], input[type=password], select { 
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none; 
+  box-shadow: 0.5px 2px 4px #27706b; 
+}
+
+label {
+  font-size: 22px;
+}
+
+p {
+  font-size: large;
+}
+textarea {
+  width: 100%; 
+  font-family: helvetica, Arial, sans-serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none; 
+  box-shadow: 0.5px 2px 4px #27706b; 
+}
+
+input[type=submit] {
+  width: 100%;  
+  background-color: #27706b;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  box-shadow: 0.5px 2px 4px #27706b;  
+  cursor: pointer; 
+}
+
+input[type=submit]:hover {
+  width: 100%; 
+  background-color: #edb733;
+}
+
+input.kultur {
+  width: 280px; 
+  position: relative;
+  left: 100px; 
+}
+
+input.kultur:hover {
+  width: 280px; 
+    background-color: #edb733;
+}
+
+#kontakt, #kontaktskjema {
+  color: #1d1d1d;  
+  border-style: none;
+  font-size: 12pt; 
+  line-height: 1.5;
+  max-width: 40%;
+  margin: auto;
+  padding: 0;
+}
+
+#kontaktskjema {
+  padding-bottom: 50px;
+}
+
+input , textarea{
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+#kontakt h1 {
+  text-align: center; 
+}
+
+#kontakt p {
+  text-align: justify;
+}
+
+/* NAVBAR */
+#nav-container {
+  background-color: #DAE5D4;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  transition: top 0.3s;
+}
+
+#nav-container a:hover {
+  color: #edb733;
+}
+
+.name a{
+  margin-left: 50px;
+  width: 60px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1d1d1d;
+  letter-spacing: 2px;
+}
+
+.menu-list-right {
+  text-align: right;
+  width: 100%;
+}
+
+.menu-list-right ul {
+  list-style: none;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.menu-list-right ul li {
+  display: inline-block;
+}
+
+.menu-list-right ul li a {
+  text-decoration: none;
+  padding: 0 5px;
+  color: #27706b;
+  font-size: 17px;
+  margin-right: 50px;
+}
+
+.name, .navbar-center, .navbar-right li {
+  margin: 0;
+}
+
+.menu-list-right ul li a.current  {
+  font-weight: bold;
+  color: #edb733;
+}
+
+#footer-container {
+  position: relative;
+  display: block;
+  background-color: #a1143f;
+  color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .footerContent{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer .footerContent p {
+  margin: 5px;
+}
+
+.footer .footerContent .section{
+  flex: 1;
+}
+
+.footer .footerContent #venstreSide{
+  padding-right: 20px;
+  text-align: right; 
+  margin: auto;
+}
+
+.footer .footerContent #hoyreSide{
+  padding-left: 20px;
+  text-align: left;
+  margin: auto;
+}
+
+.adminThing li{
+  font-size: 23px;
+}
+
+.adminThing a:visited {
+  text-decoration: none;
+}
+
+.adminThing a:link {
+  text-decoration: none;
+}
+
+.adminThing a:hover {
+  text-decoration: none;
+  color: #a1143f;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 400px 400px;
+  gap: 19px 45px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  }
+
+.container1 div{
+  left: 2cm;
+  background-color: rgb(66, 138, 138);
+}
+
+.nameDiv{
+  background-color: #DAE5D4;
+  height: 60px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.nameDiv h2{
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  text-align: center;
+  font-family: arial;
+
+}
+
+.title {
+  color: rgb(99, 61, 5);
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgba(65, 61, 57, 0.384);
+  text-align: center;
+  cursor: pointer;
+  width: 90%;
+  font-size: 18px;
+}
+
+.card img{
+  width: 100%;
+  height: 45%;
+}
+
+.info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #6264ce;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}

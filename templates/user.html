@@ -1,0 +1,11 @@
+{% extends 'login.html' %}
+
+{% block content %}
+
+
+{% if message %}
+    <p>{{message}}</p>
+    <a href="/hello">Det er ingenting du kan gjøre her foreløpig. Trykk her for å gå tilbake.</a>
+{% endif %}
+
+{% endblock %}
